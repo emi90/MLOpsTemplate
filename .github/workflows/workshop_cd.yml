@@ -42,7 +42,7 @@ jobs:
       - name: Run deployment
         uses: ./.github/actions/aml-endpoint-deploy
         with:
-          resourceGroup: ezmlopsws01 #setup replace azureml with the name of your resource group in Azure
+          resourceGroup: ezmlopsrg01 #setup replace azureml with the name of your resource group in Azure
           workspaceName: ezmlopsws01 #setup replace ws01ent with the name of your workspace in Azure
           endpointFile: src/workshop/core/scoring/endpoint.yml
           deploymentFile: src/workshop/core/scoring/deployment.yml
